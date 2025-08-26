@@ -16,6 +16,14 @@ async function main() {
     for (let j = personas.length - 1; j >= 0; j--){
         saludar(personas[j]);
     }
+
+    let limite = Number(await ask("hasta que numero quieres contar: "));
+    let x = 1;
+    while(x <= limite){
+        console.log("Contador actual; ", x);
+        x++;
+    }
+
 }
 
 
